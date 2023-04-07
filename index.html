@@ -12,27 +12,31 @@
 
 <body>
     <div class="search-box flex gap-4 justify-center mt-8">
-        <input id="userInput" class="w-[300px] pl-2 border rounded outline-none  border-black"
-            placeholder="Enter Username" type="text">
-        <button id="getUserInfo" class="bg-black text-white px-3 py-1 text-[20px] rounded-md " onclick="getInfo()">Get Information</button>
+        <input onchange="clear()" id="userInput" class="w-[300px] text-[25px] pl-2 border rounded outline-none  border-black"
+            placeholder="Enter Username" type="text " >
+        <button id="getUserInfo" class="bg-black text-white px-3 py-1 text-[20px] rounded-md " onclick="getInfo()">Get
+            Information</button>
 
     </div>
 
-    <div id="user-box" class="user-box flex  h-[70vh] justify-center items-center " >
+    <div id="user-box" class="user-box flex  h-[70vh] justify-center items-center ">
         <div class="info">
-
             <h1 class="text-center text-[40px] font-serif ">User Information</h1>
-            <div class="info py-2 px-3 flex flex-col justify-center items-center border-2  rounded-md " style="box-shadow: 1px 1px 1px 1px #808080;" >
+            <div class="info py-2 px-3 flex flex-col justify-center items-center border-2  rounded-md "
+                style="box-shadow: 1px 1px 1px 1px #808080;">
 
-                <img id="image" class="rounded-[50%] h-24" src=""
-                    alt="user-image">
+                <img id="image" class="rounded-[50%] h-24" src="" alt="user-image">
                 <h3 id="name" class="font-bold text-[33px]"></h3>
                 <h3 id="bio" class="text-[25px]"></h3>
                 <span id="follower" class="text-[25px]"></span> </h3>
                 <h3 id="repos" class="text-[25px]"></h3>
-
             </div>
         </div>
+    </div>
+    <div id="error"
+        class="error flex flex-col justify-center items-center border-2  rounded-md absolute top-[40%] left-[40%] px-4 py-1">
+        <h2 class="font-bold text-[33px] ">User not found</h2>
+        <h2 class="text-[25px]">Please Enter a Valid Username</h2>
     </div>
 
     <script src="./script.js"></script>
