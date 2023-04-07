@@ -1,5 +1,5 @@
 # GitHub User Profile
-### Here you can see GitHub profile of any valid user by entrying thier user name. 
+### Here you can see GitHub profile of any valid user by entering their user name. 
 
 Live Link:- [Click Here!](https://amarjeet-github.netlify.app/)
 
