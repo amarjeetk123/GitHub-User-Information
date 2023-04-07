@@ -5,7 +5,6 @@ let err =  document.getElementById("error")
 err.style.visibility = "hidden";
 function clear(){
     err.style.visibility = "hidden";
-    console.log("dggdgdgdg")
 }
 
 let userInput = document.getElementById("userInput");
@@ -16,11 +15,12 @@ function getInfo() {
         return value1.json()
     }).then((value2) => {
         console.log(value2);
-        if (userInput == "") {
+        if (userInput.value == "") {
             return alert("Please Enter GitHub username")
         }
         if (value2.message == "Not Found") {
-          return  err.style.visibility = "visible"
+            err.style.visibility = "visible"
+            return document.getElementById("user-box").style.visibility = "hidden";
         }
         else {
             document.getElementById("user-box").style.visibility = "visible"
@@ -39,5 +39,3 @@ userInput.addEventListener("keypress", function(event){
      getInfo()
     }
 });
-
-
