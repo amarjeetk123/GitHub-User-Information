@@ -22,4 +22,5 @@ Hey I am Amarjeet Kumar, Fullstack Javascript Developer. Very much eager to expl
 [Instagram](https://www.instagram.com/amarkumar.aaryan.5/)
 
 Web View 🖥️
-![]()
+![](./images//first.png)
+![](./images/second.png)
